@@ -28,7 +28,7 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with: 
         name: v1
-        path: ./Demo-App-22021/bin/Release/net5.0/publish
+        path: ./Demo-WebApp-22021/bin/Release/net5.0/publish
       continue-on-error: false
     
     - name: publish the app
@@ -36,6 +36,6 @@ jobs:
       with:
         app-name: azurebootcamp2021
         publish-profile: ${{ secrets.APPPUBLISH }}
-        package: './Demo-App-22021/bin/Release/net5.0/publish'
+        package: './Demo-WebApp-22021/bin/Release/net5.0/publish'
 
       
