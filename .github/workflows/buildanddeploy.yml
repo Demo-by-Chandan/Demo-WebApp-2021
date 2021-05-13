@@ -34,7 +34,7 @@ jobs:
     - name: publish the app
       uses: azure/webapps-deploy@v2
       with:
-        app-name: broadwayapp
+        app-name: broadway-demo-app
         publish-profile: ${{ secrets.APPPUBLISH }}
         package: './Demo-WebApp-2021/bin/Release/net5.0/publish'
 
